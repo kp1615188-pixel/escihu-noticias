@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ESCIHU Noticias: información, avisos y vida universitaria de la Escuela Superior de Ciencias y Humanidades.">
+  <title>ESCIHU Noticias | La comunidad se informa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="topline"><div class="wrap top-inner"><span>EDICIÓN DIGITAL · PUEBLA, MÉXICO</span><span id="today"></span></div></div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#inicio" aria-label="ESCIHU Noticias, inicio">
+        <span class="brand-mark">E<span>N</span></span>
+        <span class="brand-name">ESCIHU <b>NOTICIAS</b><small>La comunidad se informa</small></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+      <nav id="mainNav">
+        <a href="#inicio" class="active">Inicio</a><a href="#noticias">Noticias</a><a href="#avisos">Avisos</a><a href="#comunidad">Comunidad</a><a href="#acerca">Acerca de</a>
+      </nav>
+      <a class="header-link" href="https://escihupuebla.edu.mx/" target="_blank" rel="noopener">Sitio oficial ↗</a>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> PERIODISMO UNIVERSITARIO</div>
+        <h1>Lo que pasa en<br><em>nuestra comunidad.</em></h1>
+        <p>Un espacio para conocer los avisos, actividades, proyectos y acontecimientos de la Escuela Superior de Ciencias y Humanidades.</p>
+        <a class="primary-btn" href="#noticias">Explorar noticias <span>→</span></a>
+      </div>
+      <div class="hero-art" aria-label="Ilustración editorial de noticias universitarias">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="art-paper"><div class="paper-top">EN · ACTUALIDAD</div><div class="paper-line long"></div><div class="paper-line"></div><div class="paper-photo"></div><div class="paper-line long"></div><div class="paper-line short"></div></div>
+        <div class="art-sticker">ESCIHU<br><b>AL DÍA</b></div>
+        <div class="art-dot dot-a"></div><div class="art-dot dot-b"></div>
+      </div>
+    </section>
+
+    <section class="ticker"><div class="wrap ticker-inner"><b>EN BREVE</b><span>Información académica · Actividades · Comunidad · Avisos importantes</span><span class="ticker-star">✳</span></div></section>
+
+    <section class="section wrap" id="noticias">
+      <div class="section-heading"><div><div class="eyebrow">MANTENTE INFORMADO</div><h2>Últimas noticias</h2></div><p>Historias y novedades de la vida universitaria.</p></div>
+      <div class="toolbar">
+        <div class="filters" id="filters">
+          <button class="filter active" data-filter="Todas">Todas</button>
+          <button class="filter" data-filter="Académico">Académico</button>
+          <button class="filter" data-filter="Avisos">Avisos</button>
+          <button class="filter" data-filter="Comunidad">Comunidad</button>
+          <button class="filter" data-filter="Eventos">Eventos</button>
+        </div>
+        <label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="Buscar noticias..." aria-label="Buscar noticias"></label>
+      </div>
+      <div class="news-grid" id="newsGrid">
+        <article class="news-card featured" data-category="Avisos" data-search="título suficiencia calendario exámenes semestre B agosto 2026">
+          <div class="news-visual visual-blue"><span class="visual-label">AVISO ESCOLAR</span><div class="visual-symbol">▤</div><span class="visual-date">13 AGO · 2026</span></div>
+          <div class="card-body"><div class="meta"><span class="category">Avisos</span><span>13 de agosto de 2026</span></div><h3>Calendario para exámenes a título de suficiencia</h3><p>La comunidad puede consultar el calendario correspondiente al semestre B del ciclo escolar 2025–2026. La publicación oficial indica aplicación del 18 al 20 de agosto de 2026.</p><a class="read-link" href="https://escihupuebla.edu.mx/" target="_blank" rel="noopener">Consultar sitio oficial <span>↗</span></a></div>
+        </article>
+        <article class="news-card" data-category="Avisos" data-search="exámenes extraordinarios calendario julio 2026">
+          <div class="news-visual visual-orange"><span class="visual-label">CONTROL ESCOLAR</span><div class="visual-symbol">▦</div><span class="visual-date">03 JUL · 2026</span></div>
+          <div class="card-body"><div class="meta"><span class="category">Avisos</span><span>3 de julio de 2026</span></div><h3>Publican calendario de exámenes extraordinarios</h3><p>En el portal institucional se publicó el calendario de exámenes extraordinarios del semestre B, con aplicación del 6 al 8 de julio de 2026.</p><a class="read-link" href="https://escihupuebla.edu.mx/" target="_blank" rel="noopener">Consultar sitio oficial <span>↗</span></a></div>
+        </article>
+        <article class="news-card" data-category="Comunidad" data-search="comunidad universitaria participación proyectos actividades muestra">
+          <div class="news-visual visual-green"><span class="visual-label">COMUNIDAD</span><div class="visual-symbol">✳</div><span class="visual-date">CONTENIDO DE MUESTRA</span></div>
+          <div class="card-body"><div class="meta"><span class="category">Comunidad</span><span>Nota de ejemplo</span></div><h3>La participación estudiantil fortalece la vida universitaria</h3><p>Este espacio puede presentar proyectos, experiencias y actividades realizadas por estudiantes y docentes de las distintas licenciaturas.</p><span class="sample-note">Texto de muestra · Reemplazar con información confirmada</span></div>
+        </article>
+        <article class="news-card" data-category="Académico" data-search="sistemas computacionales innovación tecnología aprendizaje muestra">
+          <div class="news-visual visual-purple"><span class="visual-label">INNOVACIÓN</span><div class="visual-symbol">⌘</div><span class="visual-date">CONTENIDO DE MUESTRA</span></div>
+          <div class="card-body"><div class="meta"><span class="category">Académico</span><span>Nota de ejemplo</span></div><h3>Ideas que conectan el aprendizaje con la tecnología</h3><p>Una sección para compartir trabajos académicos, prácticas, proyectos tecnológicos y experiencias de aprendizaje.</p><span class="sample-note">Texto de muestra · Reemplazar con información confirmada</span></div>
+        </article>
+        <article class="news-card" data-category="Eventos" data-search="eventos conferencias talleres actividades culturales muestra">
+          <div class="news-visual visual-pink"><span class="visual-label">AGENDA ESCIHU</span><div class="visual-symbol">✦</div><span class="visual-date">CONTENIDO DE MUESTRA</span></div>
+          <div class="card-body"><div class="meta"><span class="category">Eventos</span><span>Nota de ejemplo</span></div><h3>Un espacio para difundir las actividades del campus</h3><p>Publica aquí próximas conferencias, talleres, jornadas, encuentros culturales y actividades deportivas de la institución.</p><span class="sample-note">Texto de muestra · Reemplazar con información confirmada</span></div>
+        </article>
+        <article class="news-card" data-category="Académico" data-search="oferta educativa carreras licenciaturas ESCIHU">
+          <div class="news-visual visual-dark"><span class="visual-label">VIDA ACADÉMICA</span><div class="visual-symbol">✎</div><span class="visual-date">INFORMACIÓN INSTITUCIONAL</span></div>
+          <div class="card-body"><div class="meta"><span class="category">Académico</span><span>Información institucional</span></div><h3>Conoce las áreas de formación de ESCIHU</h3><p>Comunicación, Diseño Gráfico, Sistemas Computacionales, Lenguas Extranjeras y otras áreas forman parte de la oferta educativa publicada por la institución.</p><a class="read-link" href="https://escihupuebla.edu.mx/" target="_blank" rel="noopener">Ver oferta educativa <span>↗</span></a></div>
+        </article>
+      </div>
+      <p class="no-results" id="noResults" hidden>No se encontraron noticias con esa búsqueda.</p>
+    </section>
+
+    <section class="notice-band" id="avisos"><div class="wrap notice-inner"><div class="notice-icon">!</div><div><div class="eyebrow">INFORMACIÓN IMPORTANTE</div><h2>Consulta siempre los avisos oficiales.</h2><p>Las fechas, trámites y disposiciones escolares pueden cambiar. Verifica la información directamente con ESCIHU.</p></div><a class="light-btn" href="https://escihupuebla.edu.mx/" target="_blank" rel="noopener">Ir al portal oficial ↗</a></div></section>
+
+    <section class="section wrap community" id="comunidad">
+      <div class="section-heading"><div><div class="eyebrow">SOMOS ESCIHU</div><h2>Una comunidad, muchas ideas.</h2></div><p>Un espacio para dar voz a quienes construyen la vida universitaria.</p></div>
+      <div class="community-grid">
+        <div class="community-card"><span>01 / TALENTO</span><div class="community-icon">✎</div><h3>Creatividad estudiantil</h3><p>Proyectos, diseños, investigaciones y propuestas desarrolladas en las aulas.</p></div>
+        <div class="community-card"><span>02 / APRENDIZAJE</span><div class="community-icon">⌘</div><h3>Experiencias académicas</h3><p>Conoce actividades, prácticas y aprendizajes de las diferentes carreras.</p></div>
+        <div class="community-card"><span>03 / ENCUENTRO</span><div class="community-icon">✳</div><h3>Vida universitaria</h3><p>Comparte eventos, logros y momentos que unen a nuestra comunidad.</p></div>
+      </div>
+    </section>
+
+    <section class="about-section" id="acerca"><div class="wrap about-inner"><div><div class="eyebrow">¿QUÉ ES ESCIHU NOTICIAS?</div><h2>Información cercana,<br><em>comunidad conectada.</em></h2></div><p>ESCIHU Noticias es una propuesta de periódico digital universitario creada para reunir información académica, avisos y contenidos de interés para estudiantes, docentes y personal de la Escuela Superior de Ciencias y Humanidades. Este sitio es un proyecto informativo independiente y no representa un canal oficial de la institución.</p></div></section>
+  </main>
+
+  <footer><div class="wrap footer-main"><div class="brand footer-brand"><span class="brand-mark">E<span>N</span></span><span class="brand-name">ESCIHU <b>NOTICIAS</b><small>La comunidad se informa</small></span></div><div class="footer-copy"><p>Proyecto de periódico digital universitario.</p><a href="https://escihupuebla.edu.mx/" target="_blank" rel="noopener">Escuela Superior de Ciencias y Humanidades ↗</a></div><div class="footer-contact"><b>Contacto institucional</b><span>informes@escihupuebla.edu.mx</span><span>(222) 242 6627</span></div></div><div class="wrap footer-bottom"><span>© <span id="year"></span> ESCIHU Noticias · Proyecto académico</span><span>La información oficial se consulta en los canales de ESCIHU.</span></div></footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
